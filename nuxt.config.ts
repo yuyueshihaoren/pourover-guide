@@ -3,4 +3,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   modules: ["@nuxt/ui", "@vueuse/nuxt"],
+  nitro: {
+    prerender: {
+      failOnError: false,
+    }
+  }
 });
